@@ -1,0 +1,115 @@
+_flash_install_packages_({
+  "activex": {
+    "date": "2021-08-10",
+    "version": "34.0.0.184",
+    "size": "19.8MB",
+    "downloadURL": "{{ .Static }}alert.html",
+    "downloadURLForNotSource": "{{ .Static }}alert.html",
+    "downloadURLForWin8": "{{ .Static }}alert.html",
+    "downloadURLForWin8NotSource": "{{ .Static }}alert.html"
+  },
+  "ppapi": {
+    "date": "2021-08-10",
+    "version": "34.0.0.184",
+    "size": "20.1MB",
+    "downloadURL": "{{ .Static }}alert.html",
+    "downloadURLForNotSource": "{{ .Static }}alert.html"
+  },
+  "npapi": {
+    "date": "2021-08-10",
+    "version": "34.0.0.184",
+    "size": "20.3MB",
+    "downloadURL": "{{ .Static }}alert.html",
+    "downloadURLForNotSource": "{{ .Static }}alert.html"
+  },
+  "mac-ppapi": {
+    "date": "2021-08-10",
+    "version": "34.0.0.184",
+    "size": "21MB",
+    "downloadURL": "{{ .Static }}alert.html",
+    "downloadURLForNotSource": "{{ .Static }}alert.html"
+  },
+  "mac-npapi": {
+    "date": "2021-08-10",
+    "version": "34.0.0.184",
+    "size": "21MB",
+    "downloadURL": "{{ .Static }}alert.html",
+    "downloadURLForNotSource": "{{ .Static }}alert.html"
+  },
+  "linux-64-tar-npapi": {
+    "date": "2021-04-13",
+    "version": "34.0.0.137",
+    "size": "9MB",
+    "downloadURL": "{{ .Static }}alert.html",
+    "downloadURLForNotSource": "{{ .Static }}alert.html"
+  },
+  "linux-64-rpm-npapi": {
+    "date": "2021-04-13",
+    "version": "34.0.0.137",
+    "size": "8.6MB",
+    "downloadURL": "{{ .Static }}alert.html",
+    "downloadURLForNotSource": "{{ .Static }}alert.html"
+  },
+  "linux-32-rpm-npapi": {
+    "date": "2021-04-13",
+    "version": "34.0.0.137",
+    "size": "8.1MB",
+    "downloadURL": "{{ .Static }}alert.html",
+    "downloadURLForNotSource": "{{ .Static }}alert.html"
+  },
+  "linux-64-tar-ppapi": {
+    "date": "2021-04-13",
+    "version": "34.0.0.137",
+    "size": "9MB",
+    "downloadURL": "{{ .Static }}alert.html",
+    "downloadURLForNotSource": "{{ .Static }}alert.html"
+  },
+  "linux-32-tar-ppapi": {
+    "date": "2021-04-13",
+    "version": "34.0.0.137",
+    "size": "8.2MB",
+    "downloadURL": "{{ .Static }}alert.html",
+    "downloadURLForNotSource": "{{ .Static }}alert.html"
+  },
+  "linux-64-rpm-ppapi": {
+    "date": "2021-04-13",
+    "version": "34.0.0.137",
+    "size": "9MB",
+    "downloadURL": "{{ .Static }}alert.html",
+    "downloadURLForNotSource": "{{ .Static }}alert.html"
+  },
+  "linux-32-rpm-ppapi": {
+    "date": "2021-04-13",
+    "version": "34.0.0.137",
+    "size": "8.1MB",
+    "downloadURL": "{{ .Static }}alert.html",
+    "downloadURLForNotSource": "{{ .Static }}alert.html"
+  },
+  "linux-32-tar-npapi": {
+    "date": "2021-04-13",
+    "version": "34.0.0.137",
+    "size": "8.1MB",
+    "downloadURL": "{{ .Static }}alert.html",
+    "downloadURLForNotSource": "{{ .Static }}alert.html"
+  },
+  "fc-ppapi": {
+    "date": "2021-08-10",
+    "downloadURL": "{{ .Static }}alert.html"
+  },
+  "fc-activex": {
+    "date": "2021-08-10",
+    "downloadURL": "{{ .Static }}alert.html"
+  },
+  "fc-npapi": {
+    "date": "2021-08-10",
+    "downloadURL": "{{ .Static }}alert.html"
+  },
+  "fc-activeX": {
+    "date": "2021-08-10",
+    "downloadURL": "{{ .Static }}alert.html"
+  },
+  "fc-ppax": {
+    "date": "2021-08-10",
+    "downloadURL": "{{ .Static }}alert.html"
+  }
+});

@@ -1,0 +1,75 @@
+Loglevel: 5
+Server:
+  IdleTimeout: 3m0s
+  ReadTimeout: 5m0s
+  WriteTimeout: 5m0s
+  ReadHeaderTimeout: 30s
+  ProxyHeader: RemoteAddr
+  StaticDir: static
+  StaticURI: /zz118smee/
+Proxy:
+  MaxIdleConns: 512
+  IdleConnTimeout: 2m0s
+  TLSHandshakeTimeout: 1m0s
+  ExpectContinueTimeout: 1s
+  maxcontentlength: -1
+  ProxyServerAddr: ""
+  ProxyCheckURL: https://myip.ipip.net/
+  PluginDir: plugins
+  Site:
+    127.0.0.1:8083:
+      Listen: 0.0.0.0
+      StaticPrefix: czjv8kmton
+      SSL: false
+      CAKey: ""
+      CACert: ""
+      ProxyPass: https://www.flash.cn/
+      Plugin: "flash"
+    127.0.0.1:8084:
+      Listen: 0.0.0.0
+      StaticPrefix: nmnckbsfkq
+      SSL: false
+      CAKey: ""
+      CACert: ""
+      ProxyPass: https://soft.flash.cn/
+      Plugin: soft.flash
+    127.0.0.1:8085:
+      Listen: 0.0.0.0
+      StaticPrefix: nmnckbsfkb
+      SSL: false
+      CAKey: ""
+      CACert: ""
+      ProxyPass: https://static.flash.cn/
+      Plugin: static.flash
+    127.0.0.1:8086:
+      Listen: 0.0.0.0
+      StaticPrefix: nmnckbsfkb
+      SSL: false
+      CAKey: ""
+      CACert: ""
+      ProxyPass: https://api.flash.cn/
+      Plugin: api.flash
+Notice:
+  dingtalk:
+    DingTalk: ""
+iplocation:
+  type: qqwry
+  geo_license_key: ""
+log_file: goblin.log
+cache:
+  type: self
+  expire_time: 10m0s
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: IMrvElmuMG
+    db: 0
+CacheType:
+- png
+- jpg
+- js
+- jpeg
+- css
+- otf
+- ttf
+CacheSize: 12582912

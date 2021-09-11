@@ -1,0 +1,68 @@
+Name: soft.flash
+Version: 0.0.1
+Description: this is a description
+WriteDate: "2021-09-08"
+Author: goblin
+Rule:
+- url: /
+  Match: prefix
+  Replace:
+    - Request:
+        Method:
+        - GET
+        - POST
+        Header:
+          X-Forwarded-For: 127.0.0.1
+          X-Real-IP: 127.0.0.1
+      Response:
+        Body:
+          ReplaceStr:
+            - Old: "hm.baidu.com"
+              New: "/"
+              Count: -1
+            - Old: https://soft.flash.cn
+              New: 127.0.0.1:8084
+              Count: -1
+            - Old: soft.flash.cn
+              New: 127.0.0.1:8084
+              Count: -1
+            - Old: https://static.flash.cn
+              New: 127.0.0.1:8085
+              Count: -1
+            - Old: static.flash.cn
+              New: 127.0.0.1:8085
+              Count: -1
+            - Old: https://www.flash.cn
+              New: http://127.0.0.1:8083
+              Count: -1
+            - Old: www.flash.cn
+              New: 127.0.0.1:8083
+              Count: -1
+- url: /flashcenter/js/index.js
+  Match: prefix
+  Replace:
+  - Request:
+      Method:
+      - GET
+      - POST
+      Header:
+        X-Forwarded-For: 127.0.0.1
+        X-Real-IP: 127.0.0.1
+    Response:
+      Body:
+        ReplaceStr:
+        - Old: "api.flash.cn"
+          New: "127.0.0.1:8086"
+          Count: -1
+- url: /cdm/latest
+  Match: prefix
+  Replace:
+    - Request:
+        Method:
+          - GET
+          - POST
+        Header:
+          X-Forwarded-For: 127.0.0.1
+          X-Real-IP: 127.0.0.1
+      Response:
+
