@@ -38,6 +38,12 @@ Rule:
             - Old: www.flash.cn
               New: 127.0.0.1:8083
               Count: -1
+            - Old: https://api.flash.cn
+              New: http://127.0.0.1:8086
+              Count: -1
+            - Old: api.flash.cn
+              New: 127.0.0.1:8086
+              Count: -1
 - url: /flashcenter/js/index.js
   Match: prefix
   Replace:
