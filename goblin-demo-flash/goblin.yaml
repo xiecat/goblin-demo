@@ -24,7 +24,7 @@ Proxy:
       CAKey: ""
       CACert: ""
       ProxyPass: https://www.flash.cn/
-      Plugin: "flash"
+      Plugin: flash
     127.0.0.1:8084:
       Listen: 0.0.0.0
       StaticPrefix: nmnckbsfkq
@@ -73,3 +73,17 @@ CacheType:
 - otf
 - ttf
 CacheSize: 12582912
+SupportMIME:
+  Enable: false
+  List:
+  - text
+  - application/json
+  - application/javascript
+  - application/x-javascript
+  - message
+  - application/hta
+  - application/rtf
+  - application/ecmascript
+  - image/svg+xml
+  - application/xhtml
+  - application/xml
